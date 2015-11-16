@@ -1,5 +1,5 @@
 package:
-  name: SSU-ALIGN
+  name: ssualign
   version: "0.1"
 
 source:
@@ -8,7 +8,7 @@ source:
  
 test:
   commands:
-    - # need to set SSUALIGNDIR
+    - source $PREFIX/.bash_profile
     - ssu-align -h
  
 about:
