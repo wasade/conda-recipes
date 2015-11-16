@@ -1,0 +1,18 @@
+package:
+  name: SSU-ALIGN
+  version: "0.1"
+
+source:
+  fn: ssu-align-0.1.tar.gz
+  url: ftp://selab.janelia.org/pub/software/ssu-align/ssu-align-0.1.tar.gz
+ 
+test:
+  commands:
+    - # need to set SSUALIGNDIR
+    - ssu-align -h
+ 
+about:
+  summary: SSU-ALIGN is a software package for identifying, aligning, masking and visualizing archaeal 16S, bacterial 16S and eukaryotic 18S small subunit ribosomal RNA (SSU rRNA) sequences. 
+  home: http://selab.janelia.org/software/ssu-align/
+  license: GPLv3
+  license_file: LICENSE
