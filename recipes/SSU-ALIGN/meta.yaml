@@ -3,8 +3,8 @@ package:
   version: "0.1"
 
 source:
-  fn: ssu-align-0.1.tar.gz
-  url: ftp://selab.janelia.org/pub/software/ssu-align/ssu-align-0.1.tar.gz
+  fn: ssu-align-0.1.1.tar.gz
+  url: http://eddylab.org/software/ssu-align/ssu-align-0.1.1.tar.gz
  
 test:
   commands:
