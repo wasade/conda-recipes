@@ -1,0 +1,35 @@
+package:
+  name: q2-quality-filter
+  version: "2017.2.0"
+
+source:
+  git_url: https://github.com/wasade/q2-quality-filter.git
+  git_rev: 2017.2.0
+
+build:
+  number: 0
+  
+requirements:
+  build:
+    - setuptools
+    - python
+    - scikit-bio
+    - qiime2 ==2017.2.0
+    - q2-types ==2017.2.0
+    - q2templates ==2017.2.0
+
+  run:
+    - setuptools
+    - python
+    - scikit-bio
+    - qiime2 ==2017.2.0
+    - q2-types ==2017.2.0
+    - q2templates ==2017.2.0
+
+test:
+  imports:
+    - qiime quality-filter
+
+about:
+  home: https://github.com/wasade/q2-quality-filter
+  license: BSD license
