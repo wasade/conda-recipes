@@ -13,7 +13,7 @@ build:
 
 requirements:
   build:
-    - python
+    - python 3.5*
     - gcc  # [not osx]
     - llvm  # [osx]
     - hdf5
@@ -23,7 +23,7 @@ requirements:
     - scikit-bio
 
   run:
-    - python
+    - python 3.5*
     - libgcc  # [not osx]
     - hdf5
     - h5py
