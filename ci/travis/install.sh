@@ -17,6 +17,7 @@ bash $MINICONDA_FILE -b -p $HOME/miniconda
 export PATH=$HOME/miniconda/bin:$PATH
 hash -r
 conda config --set always_yes yes --set changeps1 no
+conda config --add channels https://conda.anaconda.org/defaults
 conda config --add channels https://conda.anaconda.org/bioconda
 conda config --add channels https://conda.anaconda.org/biocore
 conda config --add channels https://conda.anaconda.org/qiime2

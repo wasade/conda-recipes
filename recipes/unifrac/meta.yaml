@@ -16,7 +16,7 @@ requirements:
     - python
     - gcc  # [not osx]
     - llvm  # [osx]
-    - conda-forge::hdf5
+    - hdf5
     - h5py
     - cython
     - biom-format
@@ -25,7 +25,7 @@ requirements:
   run:
     - python
     - libgcc  # [not osx]
-    - conda-forge::hdf5
+    - hdf5
     - h5py
     - cython
     - biom-format
