@@ -1,5 +1,11 @@
 #!/bin/bash
 
+pushd sucpp
+make api
+popd
+
+export LIBRARY_PATH="${PREFIX}/lib"
+
 $PYTHON setup.py install
 
 # Add more build steps here, if they are necessary.
