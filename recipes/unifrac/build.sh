@@ -1,10 +1,12 @@
 #!/bin/bash
 
+export PERFORMING_CONDA_BUILD=True
+export LIBRARY_PATH="${PREFIX}/lib"
+
 pushd sucpp
 make api
 popd
 
-export LIBRARY_PATH="${PREFIX}/lib"
 
 $PYTHON setup.py install
 
