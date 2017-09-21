@@ -3,7 +3,7 @@ package:
   version: "0.9.1"
 
 source:
-  git_url: https://github.com/wasade/unifrac.git
+  git_url: https://github.com/biocore/unifrac.git
   git_rev: 0.9.1
 
 build:
