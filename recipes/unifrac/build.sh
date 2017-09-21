@@ -1,7 +1,12 @@
 #!/bin/bash
 
 export PERFORMING_CONDA_BUILD=True
-export LIBRARY_PATH="${PREFIX}/lib"
+export LIBRARY_PATH="${CONDA_PREFIX}/lib"
+export CPLUS_INCLUDE_PATH="${CONDA_PREFIX}/include"
+
+if [ "$(uname)" == "Darwin" ]; then
+    export MACOSX_DEPLOYMENT_TARGET=10.12
+fi
 
 pushd sucpp
 make api
