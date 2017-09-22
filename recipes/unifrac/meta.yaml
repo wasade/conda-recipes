@@ -16,16 +16,14 @@ requirements:
     - python 3.5*
     - gcc  # [not osx]
     - llvm  # [osx]
-    - hdf5
-    - h5py
+    - hdf5 ==1.8.17
     - cython
-    - biom-format
-    - scikit-bio
+    - numpy
 
   run:
     - python 3.5*
     - libgcc  # [not osx]
-    - hdf5
+    - hdf5 ==1.8.17
     - h5py
     - cython
     - biom-format
